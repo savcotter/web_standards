@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My First HTML Page</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Instructions</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a>
+                </li>
+                <li><a href="about.html">ABOUT</a>
+                </li>
+                <li><a href="contact.html">CONTACT</a>
+                </li>
+                <li><a href="instructions.html">INSTRUCTIONS</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="mainContent">
+            <h2>Instructions from Saturday, July 26, 2014</h2>
+            <h3>Instructions to Add Pages</h3>
+            <ol>
+                <li>Start in iTerm2</li>
+                <li>type "git checkout -b add_three_pages" which takes you to a new branch off of the master</li>
+                <li>go to sublime "sop"</li>
+                <li>open index.html (note: to get rid of sidebar hit cmd+k cmd+b)</li>
+                <li>In the header, add an h1 called "Home"</li>
+                <li>Under the mainContent div, add an h2 called "Welcome to Our Fun Site"</li>
+                <li>Under the footer, add a p tag with &copy; 2014</li>
+                <li>change the hrefs to "index.html", "about.html", "contact.html"</li>
+                <li>in the head, add a stylesheet link "css/style.css"</li>
+                <li>go back to iTerm2</li>
+                <li>type "mkdir css" hit return</li>
+                <li>type "touch css/style.css" hit return</li>
+                <li>type "sublime css/style.css" hit return</li>
+                <li>Now you should be in Sublime Text on the css page. Add h1 with a color of red and h2 with a color of blue. (I wrote down the command shortkeys, but it's easier for me to use the arrows)</li>
+                <li>Save your CSS page cmd+s</li>
+                <li>Close that file cmd+w</li>
+                <li>Now you are back on the index.html file in Sublime. Hit cmd+shift+s to save as "about.html" in the same really_fun folder</li>
+                <li>You'll need to change the h1 and h2 text to "About" and "About Our Fun Site"</li>
+                <li>Hit cmd+shift+s again to now save as the "contact.html" file</li>
+                <li>Again, you'll need to change the h1 and h2 text to "Contact" and "Contact Us"</li>
+                <li>hit cmd+s and switch back to iTerm2</li>
+                <li>type "git status" hit return. You'll see the files are in red as they've been updated but the updates are not added.</li>
+                <li>type "git add ." hit return</li>
+                <li>now type "git status" again and hit return. You can now see the files are in green and everything is working.</li>
+                <li>To commit to these changes, type "git commit -m "added 3 pages and css" and hit return. The '-m' signifies a 'message' and anything you type in the quotes should be a quick note about the changes you made. Commit often so you have numerous commits with one or two changes each, that way if you need to backtrack you don't have to go back to square one, but just back a couple moves.</li>
+                <li>type "git status" and hit return. It should say nothing to commit, working directory clean.</li>
+                <li>type "sop" and hit return to take you back to Sublime Text.</li>
+                <li>Open your page in the browser. Check to see that it's all working. If something is wrong, you'll have to fix it and save and redo the steps to add and commit the updated files.</li>
+                <li>Now that it's working, go back to iTerm2</li>
+                <li>type "git checkout master" and hit return to take you back to the master (you've been working on the branch add_three_pages).</li>
+                <li>type "git merge add_three_pages" and hit return. Everything will merge.</li>
+                <li>to publish this to git hub so it can be shared, type "git push" and hit return.</li>
+                <li>Lastly, go to github.com and refresh your browser to see the pages you added!</li>
+            </ol>
+            <h3>Other notes</h3>
+            <ul>
+                <li>iTerm2 also called "the terminal"</li>
+                <li>to override anything denied actions, use the term "sudo"</li>
+                <li>You can add a file by typing "touch" and "index.html" or whatever you want the file name to be. Make sure you are in the correct folder before doing so.</li>
+                <li>Make a folder with "mkdir" and name</li>
+                <li>"ls" will show you what's listed in a folder</li>
+                <li>In Sublime Text, ctrl+w = wrap. Use the type bar at the bottom to wrap your highlighted area in a tag. Anything highlighted can be indented left or right with cmd+[ or ].</li>
+                <li>sop is an alias to open up sublime text. Another alias is "refrash" for refresh bash.</li>
+                <li>In COMMAND MODE in Sublime, you can move the cursor with the following hot keys:
+                    <ul>
+                        <li>j = down</li>
+                        <li>k = up</li>
+                        <li>h = left</li>
+                        <li>l = right</li>
+                        <li>gg = top</li>
+                        <li>GG = bottom</li>
+                        <li>dd = delete line</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Packages to Install</h3>
+            <ul>
+                <li>Emmet</li>
+                <li>Sidebar Enhancements</li>
+                <li>HTML-CSS-JS-Prettify</li>
+                <li>Bootstrap-3 snippets</li>
+                <li>Meteor Snippets</li>
+                <li>See email from Phil for instructions on how to install SublimeText3 and packages, plus iTerm2, AlfredApp and bash_profile.</li>
+            </ul>
+
+        </div>
+        <footer>
+            <p>Savannah Cotter &copy; 2014</p>
+        </footer>
+    </div>
+</body>
+
+</html>

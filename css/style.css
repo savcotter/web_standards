@@ -1,6 +1,40 @@
+@font-face {
+    font-family: 'HelveticaThin';
+    src: url(../fonts/HelveticaNeueLTStd-Th.otf);
+}
+body {
+    background-image: url(../img/graphpaper.png);
+    font-family: 'HelveticaThin';
+}
 h1 {
-    color: red;
+    color: navy;
 }
 h2 {
-    color: blue;
+    color: #555;
+}
+h3 {
+    color: navy;
+}
+nav {
+    margin: 0px;
+    padding: 0px;
+}
+nav ul {
+    margin: 0px;
+    padding: 0px;
+}
+nav li {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    width: 100px;
+    height: 30px;
+    /*text-align: center;*/
+    font-size: 16pt;
+}
+nav a {
+    text-decoration: none;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
 }
